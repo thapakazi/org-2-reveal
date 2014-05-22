@@ -1,0 +1,79 @@
+ #+Title: Presenting with Emacs
+ #+Author: Milan Thapa
+ #+Email: milans.thapa78@gmail.com
+
+ #+OPTIONS: toc:nil reveal_mathjax:t
+ #+REVEAL_TRANS: linear
+ #+REVEAL_THEME: night
+
+* Learning org2Reveal
+** Defining the Title Slide
+There is a special set of tags you can use to define the title slide and set the them and style of the  overall presentation.
+
+At the top of the  my-presentation.org file, add Title, Author and Email tags to create the tile slide
+
+ # #+Title: Presenting with Emacs
+ # #+Author: John Stevenson
+ # #+Email: john@jr0cket.co.uk
+
+Note: One thing I havent figured out yet is how to add a twitter handle, there does not seem to be an option for that.
+
+** Available Themes
+
+   default, beige, sky, night, serif, simple, moon
+
+** Available Transitions
+
+   default, cube, page, concave, zoom, linear, fade, none
+
+
+** A very interesting slide
+
+This slide is interesting because I am a geek :)
+
+- bullet points can be added in moderation
+- dont get too carried away with them
+
+
+** Colored Slide
+** This slide rolls in text line by line
+     #+ATTR_REVEAL: :frag roll-in
+     - show bullet-points
+     - one by one
+
+** Highlight the last bulletpoint in red
+     - show all bullet-points straight away
+     #+ATTR_REVEAL: :frag highlight-red
+     - then highlight the most important one
+
+** This is a red Slide
+     :PROPERTIES:
+     :reveal_background: #FF0000
+     :END:
+
+
+* Credit Goes to
+  Awesome People and more[[[[http://blog.jr0cket.co.uk/2013/10/create-cool-slides--Org-mode-Revealjs.html]]] [jr0cket - community developer]
+  [[http://www.google.co.uk] [Google search engine]]
+
+* Headings
+ Headings goes right
+** Sub Heading
+   it goes down
+
+* Heading
+** Sub Heading
+* hello
+** hi how are you
+
+* this is just a test
+* My List
++ item1
++ item2
++ item3
+  + item3.1
+  + item3.2
++ item4
+
+* hehe...
+  more on the way :D
